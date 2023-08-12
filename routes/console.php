@@ -32,3 +32,13 @@ Artisan::command('promedios', function () {
         }
     }
 })->purpose('Muestra los mejores Promedios');
+
+
+Artisan::command('promediosbysalon/{id_salon}', function (int $id_salon) {
+    $salon = App\Models\SalonesModel::find($id_salon);
+    $this->comment("Estos son los mejores promedios del Salon: " .  $salon->name);
+    $mProm = $salon->mejorPromedio();
+    foreach ($mProm["mejoresPromedios"] as $prom) {
+        $this->comment("Alumno: " . $prom["full_name"] . " |  Promedio: " . $prom["promedio"]);
+    }
+})->purpose('Muestra los mejores Promedios de un salon especificado');

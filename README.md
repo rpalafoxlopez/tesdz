@@ -22,6 +22,12 @@ Comando para ver los mejores promedios de todos los salones
 php artisan promedios
 </pre>
 
+Comando para ver los mejores promedios de un salo especifico
+
+<pre>
+php artisan promediosbysalon id_salon
+</pre>
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
