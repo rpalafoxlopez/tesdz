@@ -8,6 +8,14 @@ Correr los siguientes comandos en el orden especificado:
    composer install
 </pre>
 
+copie el archivo
+
+<pre>
+   .env
+</pre>
+
+Cree una nueva base de datos y agreguela al archivo <span style="color:red;font-family:console">.env</span>
+
 <pre>
    php artisan migrate
 </pre>
@@ -22,7 +30,7 @@ Comando para ver los mejores promedios de todos los salones
 php artisan promedios
 </pre>
 
-Comando para ver los mejores promedios de un salo especifico
+Comando para ver los mejores promedios de un salon especifico
 
 <pre>
 php artisan promediosbysalon id_salon
