@@ -14,7 +14,7 @@ copie el archivo
    .env
 </pre>
 
-Cree una nueva base de datos y agreguela al archivo <span style="color:red;font-family:console">.env</span>
+Cree una nueva base de datos y agreguela al archivo <span style="color:#FF0000;">.env</span>
 
 <pre>
    php artisan migrate
